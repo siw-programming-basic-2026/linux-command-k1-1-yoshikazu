@@ -11,12 +11,11 @@ who の出力は 1行が「ユーザー名  端末  日付 時刻 (接続元)」
 確認方法: pytest tests/test_ex2.py
 """
 from compare import SAMPLE_WHO
-
+from ex1_run_command import run_command
 
 def get_usernames(text):
     # TODO: 文字列を行ごとに分け、各行を空白で分けて先頭を取り出す
-    raise NotImplementedError("TODO: get_usernames を実装しよう")
-
+    return text.splitlines()
 
 if __name__ == "__main__":
-    print(get_usernames(SAMPLE_WHO))
+    print(get_usernames(run_command(['who'])))
