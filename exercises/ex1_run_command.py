@@ -11,13 +11,16 @@
     python exercises/ex1_run_command.py
     pytest tests/test_ex1.py
 """
-
+import subprocess
 
 def run_command(cmd):
-    # TODO: ここを自分で書く(README のヒントは、悩んでから開こう)
-    raise NotImplementedError("TODO: run_command を実装しよう")
-
+    # TODO: ここを自分で書く(README のヒントは、悩んでから開こう
+    result = subprocess.run(cmd,
+                           capture_output=True,
+                           text=True
+                           )
+    return result.stdout
 
 if __name__ == "__main__":
     # ターミナルで `who` を実行した結果と同じになるか見比べよう
-    print(run_command(["who"]), end="")
+    print(run_command(["who"]))
