@@ -21,7 +21,8 @@ def get_usernames(text):
      #   names.append(line.split()[0])
 
 
-    return nameslist,namesset
+    return nameslist,namesset,len(nameslist),len(namesset)
+
 if __name__ == "__main__":
     print(get_usernames(run_command(['who']))[0])
     print()
@@ -31,3 +32,14 @@ if __name__ == "__main__":
     print()
     print(f"ユーザー数{len(get_usernames(run_command(['who']))[1])}")
     
+    users=get_usernames(run_command(['who']))
+
+    print(users)
+    print(users[0])
+    print(users[1])
+    print(users[2])
+    print(users[3])
+
+    for user in users:
+        print(user)
+
