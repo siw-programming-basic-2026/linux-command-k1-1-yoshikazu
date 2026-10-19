@@ -26,4 +26,8 @@ if __name__ == "__main__":
     print(get_usernames(run_command(['who']))[0])
     print()
     print(get_usernames(run_command(['who']))[1])
+    print()
+    print(f"セッション数{len(get_usernames(run_command(['who']))[0])}")
+    print()
+    print(f"ユーザー数{len(get_usernames(run_command(['who']))[1])}")
     
