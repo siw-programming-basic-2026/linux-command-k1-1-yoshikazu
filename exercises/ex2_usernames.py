@@ -15,7 +15,11 @@ from ex1_run_command import run_command
 
 def get_usernames(text):
     # TODO: 文字列を行ごとに分け、各行を空白で分けて先頭を取り出す
-    return text.splitlines()
+    names=[]
+    for line in text.splitlines():
+        names.append(line.split()[0])
 
+
+    return names
 if __name__ == "__main__":
     print(get_usernames(run_command(['who'])))
