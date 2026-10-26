@@ -1,5 +1,6 @@
 username,terminal,login_time,status
 siw-260103,pts/2,10:20,active
+
 siw-260101,pts/0,09:10,active
 siw-260104,pts/1,09:45,disconnected
 siw-260102,pts/3,10:35,active
