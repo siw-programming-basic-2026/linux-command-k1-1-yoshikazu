@@ -1,0 +1,14 @@
+username,department,shell,status
+siw-270201,web,/bin/zsh,active
+siw-270202,game,/bin/bash,active
+siw-270203,web,/bin/zsh,active
+guest01,guest,/bin/zsh,active
+
+siw-270204,ai,/bin/zsh,inactive
+siw-270205,game,/bin/zsh,active
+teacher01,staff,/bin/zsh,active
+
+siw-270205,game,/bin/zsh,active
+siw-270206,web,/bin/bash,inactive
+siw-270207,ai,/usr/bin/zsh,active
+siw-270208,web,/bin/zsh,active
